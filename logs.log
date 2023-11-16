@@ -1,0 +1,1402 @@
+2023-11-16 00:25:48,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:25:48,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:25:48,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:25:48,085:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:26:52,574:INFO:PyCaret ClassificationExperiment
+2023-11-16 00:26:52,574:INFO:Logging name: mclass-predict-maintainance
+2023-11-16 00:26:52,574:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-11-16 00:26:52,574:INFO:version 3.2.0
+2023-11-16 00:26:52,574:INFO:Initializing setup()
+2023-11-16 00:26:52,574:INFO:self.USI: f828
+2023-11-16 00:26:52,574:INFO:self._variable_keys: {'exp_name_log', 'fold_groups_param', 'exp_id', 'X_train', 'seed', 'y', '_available_plots', 'fold_shuffle_param', 'gpu_param', 'y_train', 'fix_imbalance', '_ml_usecase', 'is_multiclass', 'log_plots_param', 'X', 'gpu_n_jobs_param', 'target_param', 'logging_param', 'n_jobs_param', 'USI', 'pipeline', 'y_test', 'fold_generator', 'memory', 'idx', 'html_param', 'X_test', 'data'}
+2023-11-16 00:26:52,574:INFO:Checking environment
+2023-11-16 00:26:52,574:INFO:python_version: 3.11.5
+2023-11-16 00:26:52,574:INFO:python_build: ('main', 'Sep 11 2023 13:26:23')
+2023-11-16 00:26:52,574:INFO:machine: AMD64
+2023-11-16 00:26:52,574:INFO:platform: Windows-10-10.0.22621-SP0
+2023-11-16 00:26:52,574:INFO:Memory: svmem(total=68666003456, available=56093364224, percent=18.3, used=12572639232, free=56093364224)
+2023-11-16 00:26:52,574:INFO:Physical Core: 6
+2023-11-16 00:26:52,574:INFO:Logical Core: 12
+2023-11-16 00:26:52,574:INFO:Checking libraries
+2023-11-16 00:26:52,574:INFO:System:
+2023-11-16 00:26:52,574:INFO:    python: 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]
+2023-11-16 00:26:52,574:INFO:executable: c:\Users\pawas\.conda\envs\pyenv\python.exe
+2023-11-16 00:26:52,574:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-11-16 00:26:52,574:INFO:PyCaret required dependencies:
+2023-11-16 00:26:53,483:INFO:                 pip: 23.2.1
+2023-11-16 00:26:53,483:INFO:          setuptools: 68.0.0
+2023-11-16 00:26:53,483:INFO:             pycaret: 3.2.0
+2023-11-16 00:26:53,483:INFO:             IPython: 8.15.0
+2023-11-16 00:26:53,483:INFO:          ipywidgets: 8.1.1
+2023-11-16 00:26:53,483:INFO:                tqdm: 4.66.1
+2023-11-16 00:26:53,483:INFO:               numpy: 1.24.4
+2023-11-16 00:26:53,483:INFO:              pandas: 1.5.3
+2023-11-16 00:26:53,483:INFO:              jinja2: 3.1.2
+2023-11-16 00:26:53,483:INFO:               scipy: 1.10.1
+2023-11-16 00:26:53,483:INFO:              joblib: 1.3.2
+2023-11-16 00:26:53,483:INFO:             sklearn: 1.3.1
+2023-11-16 00:26:53,483:INFO:                pyod: 1.1.1
+2023-11-16 00:26:53,483:INFO:            imblearn: 0.11.0
+2023-11-16 00:26:53,483:INFO:   category_encoders: 2.6.3
+2023-11-16 00:26:53,483:INFO:            lightgbm: 4.1.0
+2023-11-16 00:26:53,483:INFO:               numba: 0.58.0
+2023-11-16 00:26:53,483:INFO:            requests: 2.31.0
+2023-11-16 00:26:53,483:INFO:          matplotlib: 3.8.0
+2023-11-16 00:26:53,483:INFO:          scikitplot: 0.3.7
+2023-11-16 00:26:53,483:INFO:         yellowbrick: 1.5
+2023-11-16 00:26:53,483:INFO:              plotly: 5.17.0
+2023-11-16 00:26:53,483:INFO:    plotly-resampler: Not installed
+2023-11-16 00:26:53,483:INFO:             kaleido: 0.2.1
+2023-11-16 00:26:53,483:INFO:           schemdraw: 0.15
+2023-11-16 00:26:53,483:INFO:         statsmodels: 0.14.0
+2023-11-16 00:26:53,483:INFO:              sktime: 0.21.1
+2023-11-16 00:26:53,483:INFO:               tbats: 1.1.3
+2023-11-16 00:26:53,483:INFO:            pmdarima: 2.0.4
+2023-11-16 00:26:53,483:INFO:              psutil: 5.9.0
+2023-11-16 00:26:53,483:INFO:          markupsafe: 2.1.3
+2023-11-16 00:26:53,483:INFO:             pickle5: Not installed
+2023-11-16 00:26:53,483:INFO:         cloudpickle: 2.2.1
+2023-11-16 00:26:53,483:INFO:         deprecation: 2.1.0
+2023-11-16 00:26:53,483:INFO:              xxhash: 3.4.1
+2023-11-16 00:26:53,483:INFO:           wurlitzer: Not installed
+2023-11-16 00:26:53,483:INFO:PyCaret optional dependencies:
+2023-11-16 00:26:55,093:INFO:                shap: 0.42.1
+2023-11-16 00:26:55,093:INFO:           interpret: 0.4.4
+2023-11-16 00:26:55,093:INFO:                umap: 0.5.4
+2023-11-16 00:26:55,093:INFO:     ydata_profiling: 4.6.0
+2023-11-16 00:26:55,093:INFO:  explainerdashboard: 0.4.3
+2023-11-16 00:26:55,093:INFO:             autoviz: Not installed
+2023-11-16 00:26:55,093:INFO:           fairlearn: 0.7.0
+2023-11-16 00:26:55,093:INFO:          deepchecks: Not installed
+2023-11-16 00:26:55,093:INFO:             xgboost: 2.0.0
+2023-11-16 00:26:55,093:INFO:            catboost: 1.2.2
+2023-11-16 00:26:55,093:INFO:              kmodes: 0.12.2
+2023-11-16 00:26:55,093:INFO:             mlxtend: 0.23.0
+2023-11-16 00:26:55,093:INFO:       statsforecast: 1.5.0
+2023-11-16 00:26:55,093:INFO:        tune_sklearn: Not installed
+2023-11-16 00:26:55,093:INFO:                 ray: Not installed
+2023-11-16 00:26:55,094:INFO:            hyperopt: 0.2.7
+2023-11-16 00:26:55,094:INFO:              optuna: 3.4.0
+2023-11-16 00:26:55,094:INFO:               skopt: 0.9.0
+2023-11-16 00:26:55,094:INFO:              mlflow: 1.30.1
+2023-11-16 00:26:55,094:INFO:              gradio: 3.50.2
+2023-11-16 00:26:55,094:INFO:             fastapi: 0.104.1
+2023-11-16 00:26:55,094:INFO:             uvicorn: 0.24.0.post1
+2023-11-16 00:26:55,094:INFO:              m2cgen: 0.10.0
+2023-11-16 00:26:55,094:INFO:           evidently: 0.2.8
+2023-11-16 00:26:55,094:INFO:               fugue: 0.8.6
+2023-11-16 00:26:55,094:INFO:           streamlit: Not installed
+2023-11-16 00:26:55,094:INFO:             prophet: Not installed
+2023-11-16 00:26:55,094:INFO:None
+2023-11-16 00:26:55,094:INFO:Set up data.
+2023-11-16 00:26:55,266:INFO:Set up folding strategy.
+2023-11-16 00:26:55,266:INFO:Set up train/test split.
+2023-11-16 00:26:55,386:INFO:Set up index.
+2023-11-16 00:26:55,400:INFO:Assigning column types.
+2023-11-16 00:26:55,533:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-11-16 00:26:55,585:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-11-16 00:26:55,585:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-11-16 00:26:55,616:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:55,616:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:55,917:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-11-16 00:26:55,918:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-11-16 00:26:55,933:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:55,950:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:55,950:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-11-16 00:26:55,999:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-11-16 00:26:56,028:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:56,031:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:56,080:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-11-16 00:26:56,102:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:56,102:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:56,102:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-11-16 00:26:56,183:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:56,183:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:56,266:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:56,266:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:56,266:INFO:Preparing preprocessing pipeline...
+2023-11-16 00:26:56,283:INFO:Set up label encoding.
+2023-11-16 00:26:56,283:INFO:Set up date feature engineering.
+2023-11-16 00:26:56,283:INFO:Set up simple imputation.
+2023-11-16 00:26:56,898:INFO:Finished creating preprocessing pipeline.
+2023-11-16 00:26:56,903:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\pawas\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['datetime'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_...
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean',
+                                                              verbose='deprecated'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose='deprecated')))],
+         verbose=False)
+2023-11-16 00:26:56,903:INFO:Creating final display dataframe.
+2023-11-16 00:26:57,866:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8              Numeric features   
+9                 Date features   
+10     Rows with missing values   
+11                   Preprocess   
+12              Imputation type   
+13           Numeric imputation   
+14       Categorical imputation   
+15               Fold Generator   
+16                  Fold Number   
+17                     CPU Jobs   
+18                      Use GPU   
+19               Log Experiment   
+20              Experiment Name   
+21                          USI   
+
+                                              Value  
+0                                               123  
+1                                           failure  
+2                                        Multiclass  
+3   comp1: 0, comp2: 1, comp3: 2, comp4: 3, none: 4  
+4                                      (290442, 49)  
+5                                      (290442, 51)  
+6                                      (203309, 51)  
+7                                       (87133, 51)  
+8                                                47  
+9                                                 1  
+10                                             0.1%  
+11                                             True  
+12                                           simple  
+13                                             mean  
+14                                             mode  
+15                                  TimeSeriesSplit  
+16                                                5  
+17                                               -1  
+18                                            False  
+19                                            False  
+20                      mclass-predict-maintainance  
+21                                             f828  
+2023-11-16 00:26:57,961:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:57,963:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:58,035:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-16 00:26:58,035:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-16 00:26:58,035:INFO:setup() successfully completed in 5.46s...............
+2023-11-16 00:27:02,290:INFO:Initializing compare_models()
+2023-11-16 00:27:02,290:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, include=['rf', 'lightgbm', 'xgboost', 'catboost'], exclude=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, 'include': ['rf', 'lightgbm', 'xgboost', 'catboost'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>})
+2023-11-16 00:27:02,290:INFO:Checking exceptions
+2023-11-16 00:27:02,371:INFO:Preparing display monitor
+2023-11-16 00:27:02,387:INFO:Initializing Random Forest Classifier
+2023-11-16 00:27:02,387:INFO:Total runtime is 0.0 minutes
+2023-11-16 00:27:02,387:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:27:02,387:INFO:Initializing create_model()
+2023-11-16 00:27:02,387:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=rf, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D1CADDAD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:27:02,387:INFO:Checking exceptions
+2023-11-16 00:27:02,387:INFO:Importing libraries
+2023-11-16 00:27:02,387:INFO:Copying training dataset
+2023-11-16 00:27:02,535:INFO:Defining folds
+2023-11-16 00:27:02,535:INFO:Declaring metric variables
+2023-11-16 00:27:02,538:INFO:Importing untrained model
+2023-11-16 00:27:02,540:INFO:Random Forest Classifier Imported successfully
+2023-11-16 00:27:02,545:INFO:Starting cross validation
+2023-11-16 00:27:02,546:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:27:22,470:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:23,606:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:24,692:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:35,438:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:36,265:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:37,216:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:44,967:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:45,617:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:46,326:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:50,577:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:50,907:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:51,269:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:53,839:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:54,017:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:54,179:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:27:54,704:INFO:Calculating mean and std
+2023-11-16 00:27:54,704:INFO:Creating metrics dataframe
+2023-11-16 00:27:54,704:INFO:Uploading results into container
+2023-11-16 00:27:54,704:INFO:Uploading model into container now
+2023-11-16 00:27:54,704:INFO:_master_model_container: 1
+2023-11-16 00:27:54,704:INFO:_display_container: 2
+2023-11-16 00:27:54,704:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=123, verbose=0, warm_start=False)
+2023-11-16 00:27:54,704:INFO:create_model() successfully completed......................................
+2023-11-16 00:27:54,813:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:27:54,813:INFO:Creating metrics dataframe
+2023-11-16 00:27:54,829:INFO:Initializing Light Gradient Boosting Machine
+2023-11-16 00:27:54,829:INFO:Total runtime is 0.8740296721458435 minutes
+2023-11-16 00:27:54,829:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:27:54,829:INFO:Initializing create_model()
+2023-11-16 00:27:54,829:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=lightgbm, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D1CADDAD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:27:54,829:INFO:Checking exceptions
+2023-11-16 00:27:54,829:INFO:Importing libraries
+2023-11-16 00:27:54,829:INFO:Copying training dataset
+2023-11-16 00:27:54,948:INFO:Defining folds
+2023-11-16 00:27:54,948:INFO:Declaring metric variables
+2023-11-16 00:27:54,948:INFO:Importing untrained model
+2023-11-16 00:27:54,964:INFO:Light Gradient Boosting Machine Imported successfully
+2023-11-16 00:27:54,968:INFO:Starting cross validation
+2023-11-16 00:27:54,968:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:28:04,936:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:05,200:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:05,460:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:07,730:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,083:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,290:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,398:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,463:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,550:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,753:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,808:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,900:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:08,963:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:09,083:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:09,195:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-11-16 00:28:09,266:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:09,799:INFO:Calculating mean and std
+2023-11-16 00:28:09,799:INFO:Creating metrics dataframe
+2023-11-16 00:28:09,799:INFO:Uploading results into container
+2023-11-16 00:28:09,799:INFO:Uploading model into container now
+2023-11-16 00:28:09,799:INFO:_master_model_container: 2
+2023-11-16 00:28:09,799:INFO:_display_container: 2
+2023-11-16 00:28:09,799:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2023-11-16 00:28:09,799:INFO:create_model() successfully completed......................................
+2023-11-16 00:28:09,914:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:28:09,914:INFO:Creating metrics dataframe
+2023-11-16 00:28:09,930:INFO:Initializing Extreme Gradient Boosting
+2023-11-16 00:28:09,930:INFO:Total runtime is 1.125723926226298 minutes
+2023-11-16 00:28:09,930:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:28:09,930:INFO:Initializing create_model()
+2023-11-16 00:28:09,930:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=xgboost, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D1CADDAD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:28:09,930:INFO:Checking exceptions
+2023-11-16 00:28:09,930:INFO:Importing libraries
+2023-11-16 00:28:09,930:INFO:Copying training dataset
+2023-11-16 00:28:10,047:INFO:Defining folds
+2023-11-16 00:28:10,047:INFO:Declaring metric variables
+2023-11-16 00:28:10,053:INFO:Importing untrained model
+2023-11-16 00:28:10,053:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:28:10,064:INFO:Starting cross validation
+2023-11-16 00:28:10,065:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:28:17,760:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:17,967:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:18,147:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:22,540:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:22,747:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:22,931:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:23,599:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:23,796:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:23,984:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:27,255:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:27,449:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:27,634:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:30,465:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:30,632:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:30,796:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:28:31,323:INFO:Calculating mean and std
+2023-11-16 00:28:31,323:INFO:Creating metrics dataframe
+2023-11-16 00:28:31,323:INFO:Uploading results into container
+2023-11-16 00:28:31,323:INFO:Uploading model into container now
+2023-11-16 00:28:31,323:INFO:_master_model_container: 3
+2023-11-16 00:28:31,323:INFO:_display_container: 2
+2023-11-16 00:28:31,323:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...)
+2023-11-16 00:28:31,329:INFO:create_model() successfully completed......................................
+2023-11-16 00:28:31,449:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:28:31,449:INFO:Creating metrics dataframe
+2023-11-16 00:28:31,453:INFO:Initializing CatBoost Classifier
+2023-11-16 00:28:31,453:INFO:Total runtime is 1.4844324747721354 minutes
+2023-11-16 00:28:31,453:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:28:31,453:INFO:Initializing create_model()
+2023-11-16 00:28:31,453:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=catboost, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D1CADDAD0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:28:31,453:INFO:Checking exceptions
+2023-11-16 00:28:31,453:INFO:Importing libraries
+2023-11-16 00:28:31,453:INFO:Copying training dataset
+2023-11-16 00:28:31,580:INFO:Defining folds
+2023-11-16 00:28:31,580:INFO:Declaring metric variables
+2023-11-16 00:28:31,580:INFO:Importing untrained model
+2023-11-16 00:28:31,580:INFO:CatBoost Classifier Imported successfully
+2023-11-16 00:28:31,580:INFO:Starting cross validation
+2023-11-16 00:28:31,595:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:29:55,463:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:29:55,765:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:29:56,096:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:10,413:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:10,730:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:11,046:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:24,705:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:24,993:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:25,308:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:30,531:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:30,827:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:31,146:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:38,424:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:38,592:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:38,764:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:30:39,290:INFO:Calculating mean and std
+2023-11-16 00:30:39,291:INFO:Creating metrics dataframe
+2023-11-16 00:30:39,292:INFO:Uploading results into container
+2023-11-16 00:30:39,292:INFO:Uploading model into container now
+2023-11-16 00:30:39,292:INFO:_master_model_container: 4
+2023-11-16 00:30:39,292:INFO:_display_container: 2
+2023-11-16 00:30:39,292:INFO:<catboost.core.CatBoostClassifier object at 0x0000029D23FA76D0>
+2023-11-16 00:30:39,292:INFO:create_model() successfully completed......................................
+2023-11-16 00:30:39,418:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:30:39,418:INFO:Creating metrics dataframe
+2023-11-16 00:30:39,434:INFO:Initializing create_model()
+2023-11-16 00:30:39,434:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:30:39,434:INFO:Checking exceptions
+2023-11-16 00:30:39,434:INFO:Importing libraries
+2023-11-16 00:30:39,434:INFO:Copying training dataset
+2023-11-16 00:30:39,559:INFO:Defining folds
+2023-11-16 00:30:39,559:INFO:Declaring metric variables
+2023-11-16 00:30:39,559:INFO:Importing untrained model
+2023-11-16 00:30:39,559:INFO:Declaring custom model
+2023-11-16 00:30:39,559:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:30:39,559:INFO:Cross validation set to False
+2023-11-16 00:30:39,559:INFO:Fitting Model
+2023-11-16 00:30:44,959:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:30:44,974:INFO:create_model() successfully completed......................................
+2023-11-16 00:30:45,131:INFO:_master_model_container: 4
+2023-11-16 00:30:45,131:INFO:_display_container: 2
+2023-11-16 00:30:45,132:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:30:45,132:INFO:compare_models() successfully completed......................................
+2023-11-16 00:31:12,541:INFO:Initializing tune_model()
+2023-11-16 00:31:12,541:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=10, custom_grid={'learning_rate': [0.01, 0.1], 'n_estimators': [50, 100], 'max_depth': [3, 5, 7], 'subsample': [0.8, 0.9, 1.0], 'colsample_bytree': [0.8, 1.0], 'gamma': [0, 1, 5], 'min_child_weight': [1, 3, 5]}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:31:12,541:INFO:Checking exceptions
+2023-11-16 00:31:12,591:INFO:Copying training dataset
+2023-11-16 00:31:12,686:INFO:Checking base model
+2023-11-16 00:31:12,686:INFO:Base model : Extreme Gradient Boosting
+2023-11-16 00:31:12,690:INFO:Declaring metric variables
+2023-11-16 00:31:12,693:INFO:Defining Hyperparameters
+2023-11-16 00:31:12,811:INFO:custom_grid: {'actual_estimator__learning_rate': [0.01, 0.1], 'actual_estimator__n_estimators': [50, 100], 'actual_estimator__max_depth': [3, 5, 7], 'actual_estimator__subsample': [0.8, 0.9, 1.0], 'actual_estimator__colsample_bytree': [0.8, 1.0], 'actual_estimator__gamma': [0, 1, 5], 'actual_estimator__min_child_weight': [1, 3, 5]}
+2023-11-16 00:31:12,811:INFO:Tuning with n_jobs=-1
+2023-11-16 00:31:12,811:INFO:Initializing RandomizedSearchCV
+2023-11-16 00:32:33,707:INFO:best_params: {'actual_estimator__subsample': 0.9, 'actual_estimator__n_estimators': 100, 'actual_estimator__min_child_weight': 5, 'actual_estimator__max_depth': 7, 'actual_estimator__learning_rate': 0.1, 'actual_estimator__gamma': 0, 'actual_estimator__colsample_bytree': 0.8}
+2023-11-16 00:32:33,707:INFO:Hyperparameter search completed
+2023-11-16 00:32:33,707:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:32:33,707:INFO:Initializing create_model()
+2023-11-16 00:32:33,707:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D07E57450>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'subsample': 0.9, 'n_estimators': 100, 'min_child_weight': 5, 'max_depth': 7, 'learning_rate': 0.1, 'gamma': 0, 'colsample_bytree': 0.8})
+2023-11-16 00:32:33,707:INFO:Checking exceptions
+2023-11-16 00:32:33,707:INFO:Importing libraries
+2023-11-16 00:32:33,707:INFO:Copying training dataset
+2023-11-16 00:32:33,822:INFO:Defining folds
+2023-11-16 00:32:33,822:INFO:Declaring metric variables
+2023-11-16 00:32:33,822:INFO:Importing untrained model
+2023-11-16 00:32:33,822:INFO:Declaring custom model
+2023-11-16 00:32:33,822:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:32:33,840:INFO:Starting cross validation
+2023-11-16 00:32:33,840:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:32:39,680:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:39,945:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:40,213:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:41,250:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:41,438:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:41,622:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:44,645:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:44,821:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:45,005:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:47,567:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:47,742:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:47,912:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:51,824:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:51,999:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:52,172:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:32:52,496:INFO:Calculating mean and std
+2023-11-16 00:32:52,496:INFO:Creating metrics dataframe
+2023-11-16 00:32:52,501:INFO:Finalizing model
+2023-11-16 00:32:57,403:INFO:Uploading results into container
+2023-11-16 00:32:57,404:INFO:Uploading model into container now
+2023-11-16 00:32:57,404:INFO:_master_model_container: 5
+2023-11-16 00:32:57,404:INFO:_display_container: 3
+2023-11-16 00:32:57,406:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.8, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=0, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=5, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:32:57,406:INFO:create_model() successfully completed......................................
+2023-11-16 00:32:57,550:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:32:57,550:INFO:choose_better activated
+2023-11-16 00:32:57,550:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:32:57,550:INFO:Initializing create_model()
+2023-11-16 00:32:57,550:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:32:57,550:INFO:Checking exceptions
+2023-11-16 00:32:57,550:INFO:Importing libraries
+2023-11-16 00:32:57,550:INFO:Copying training dataset
+2023-11-16 00:32:57,673:INFO:Defining folds
+2023-11-16 00:32:57,673:INFO:Declaring metric variables
+2023-11-16 00:32:57,673:INFO:Importing untrained model
+2023-11-16 00:32:57,673:INFO:Declaring custom model
+2023-11-16 00:32:57,673:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:32:57,673:INFO:Starting cross validation
+2023-11-16 00:32:57,673:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:33:03,514:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:03,791:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:04,084:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:05,127:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:05,396:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:05,644:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:06,087:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:06,358:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:06,616:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:06,777:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:06,959:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:07,136:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:19,820:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:19,988:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:20,158:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:33:20,684:INFO:Calculating mean and std
+2023-11-16 00:33:20,685:INFO:Creating metrics dataframe
+2023-11-16 00:33:20,685:INFO:Finalizing model
+2023-11-16 00:33:26,150:INFO:Uploading results into container
+2023-11-16 00:33:26,151:INFO:Uploading model into container now
+2023-11-16 00:33:26,151:INFO:_master_model_container: 6
+2023-11-16 00:33:26,151:INFO:_display_container: 4
+2023-11-16 00:33:26,152:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:33:26,152:INFO:create_model() successfully completed......................................
+2023-11-16 00:33:26,295:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:33:26,296:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9966
+2023-11-16 00:33:26,297:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.8, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=0, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=5, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9964
+2023-11-16 00:33:26,298:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) is best model
+2023-11-16 00:33:26,298:INFO:choose_better completed
+2023-11-16 00:33:26,298:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-16 00:33:26,305:INFO:_master_model_container: 6
+2023-11-16 00:33:26,306:INFO:_display_container: 3
+2023-11-16 00:33:26,306:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:33:26,306:INFO:tune_model() successfully completed......................................
+2023-11-16 00:34:30,470:INFO:Initializing tune_model()
+2023-11-16 00:34:30,470:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=10, custom_grid={'learning_rate': [0.01, 0.1, 0.2], 'n_estimators': [50, 100, 200], 'max_depth': [3, 5, 7], 'subsample': [0.8, 0.9, 1.0], 'colsample_bytree': [0.8, 1.0], 'gamma': [0, 1, 5], 'min_child_weight': [1, 3, 5]}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:34:30,470:INFO:Checking exceptions
+2023-11-16 00:34:30,528:INFO:Copying training dataset
+2023-11-16 00:34:30,609:INFO:Checking base model
+2023-11-16 00:34:30,610:INFO:Base model : Extreme Gradient Boosting
+2023-11-16 00:34:30,613:INFO:Declaring metric variables
+2023-11-16 00:34:30,616:INFO:Defining Hyperparameters
+2023-11-16 00:34:30,733:INFO:custom_grid: {'actual_estimator__learning_rate': [0.01, 0.1, 0.2], 'actual_estimator__n_estimators': [50, 100, 200], 'actual_estimator__max_depth': [3, 5, 7], 'actual_estimator__subsample': [0.8, 0.9, 1.0], 'actual_estimator__colsample_bytree': [0.8, 1.0], 'actual_estimator__gamma': [0, 1, 5], 'actual_estimator__min_child_weight': [1, 3, 5]}
+2023-11-16 00:34:30,733:INFO:Tuning with n_jobs=-1
+2023-11-16 00:34:30,733:INFO:Initializing RandomizedSearchCV
+2023-11-16 00:36:24,784:INFO:best_params: {'actual_estimator__subsample': 1.0, 'actual_estimator__n_estimators': 100, 'actual_estimator__min_child_weight': 1, 'actual_estimator__max_depth': 5, 'actual_estimator__learning_rate': 0.1, 'actual_estimator__gamma': 0, 'actual_estimator__colsample_bytree': 0.8}
+2023-11-16 00:36:24,784:INFO:Hyperparameter search completed
+2023-11-16 00:36:24,784:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:36:24,784:INFO:Initializing create_model()
+2023-11-16 00:36:24,784:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D07E57450>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'subsample': 1.0, 'n_estimators': 100, 'min_child_weight': 1, 'max_depth': 5, 'learning_rate': 0.1, 'gamma': 0, 'colsample_bytree': 0.8})
+2023-11-16 00:36:24,784:INFO:Checking exceptions
+2023-11-16 00:36:24,784:INFO:Importing libraries
+2023-11-16 00:36:24,784:INFO:Copying training dataset
+2023-11-16 00:36:24,897:INFO:Defining folds
+2023-11-16 00:36:24,897:INFO:Declaring metric variables
+2023-11-16 00:36:24,897:INFO:Importing untrained model
+2023-11-16 00:36:24,897:INFO:Declaring custom model
+2023-11-16 00:36:24,897:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:36:24,913:INFO:Starting cross validation
+2023-11-16 00:36:24,913:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:36:29,138:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:29,348:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:29,554:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:29,940:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:30,130:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:30,317:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:33,430:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:33,622:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:33,808:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:39,153:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:39,332:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:39,513:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:42,764:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:42,932:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:43,101:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:43,637:INFO:Calculating mean and std
+2023-11-16 00:36:43,637:INFO:Creating metrics dataframe
+2023-11-16 00:36:43,640:INFO:Finalizing model
+2023-11-16 00:36:47,747:INFO:Uploading results into container
+2023-11-16 00:36:47,760:INFO:Uploading model into container now
+2023-11-16 00:36:47,761:INFO:_master_model_container: 7
+2023-11-16 00:36:47,761:INFO:_display_container: 4
+2023-11-16 00:36:47,762:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.8, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=0, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=5, max_leaves=None,
+              min_child_weight=1, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:36:47,762:INFO:create_model() successfully completed......................................
+2023-11-16 00:36:47,899:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:36:47,899:INFO:choose_better activated
+2023-11-16 00:36:47,899:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:36:47,899:INFO:Initializing create_model()
+2023-11-16 00:36:47,899:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:36:47,899:INFO:Checking exceptions
+2023-11-16 00:36:47,899:INFO:Importing libraries
+2023-11-16 00:36:47,899:INFO:Copying training dataset
+2023-11-16 00:36:48,013:INFO:Defining folds
+2023-11-16 00:36:48,013:INFO:Declaring metric variables
+2023-11-16 00:36:48,013:INFO:Importing untrained model
+2023-11-16 00:36:48,013:INFO:Declaring custom model
+2023-11-16 00:36:48,013:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:36:48,013:INFO:Starting cross validation
+2023-11-16 00:36:48,013:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:36:53,494:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:53,759:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:54,024:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:54,067:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:54,334:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:54,604:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:55,731:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:55,916:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:36:56,115:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:01,837:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:02,012:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:02,179:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:10,929:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:11,101:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:11,274:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:37:11,600:INFO:Calculating mean and std
+2023-11-16 00:37:11,600:INFO:Creating metrics dataframe
+2023-11-16 00:37:11,600:INFO:Finalizing model
+2023-11-16 00:37:16,516:INFO:Uploading results into container
+2023-11-16 00:37:16,516:INFO:Uploading model into container now
+2023-11-16 00:37:16,516:INFO:_master_model_container: 8
+2023-11-16 00:37:16,516:INFO:_display_container: 5
+2023-11-16 00:37:16,528:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:37:16,528:INFO:create_model() successfully completed......................................
+2023-11-16 00:37:16,662:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:37:16,662:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9966
+2023-11-16 00:37:16,662:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.8, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=0, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=5, max_leaves=None,
+              min_child_weight=1, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9966
+2023-11-16 00:37:16,662:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) is best model
+2023-11-16 00:37:16,662:INFO:choose_better completed
+2023-11-16 00:37:16,662:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-16 00:37:16,662:INFO:_master_model_container: 8
+2023-11-16 00:37:16,662:INFO:_display_container: 4
+2023-11-16 00:37:16,662:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:37:16,662:INFO:tune_model() successfully completed......................................
+2023-11-16 00:39:09,269:INFO:Initializing tune_model()
+2023-11-16 00:39:09,269:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=50, custom_grid=None, optimize=f1_weighted, custom_scorer=None, search_library=optuna, search_algorithm=tpe, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:39:09,269:INFO:Checking exceptions
+2023-11-16 00:39:09,269:INFO:Soft dependency imported: optuna: 3.4.0
+2023-11-16 00:42:37,185:INFO:Initializing tune_model()
+2023-11-16 00:42:37,185:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=10, custom_grid=None, optimize=f1_weighted, custom_scorer=None, search_library=scikt-optimize, search_algorithm=bayesian, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:42:37,185:INFO:Checking exceptions
+2023-11-16 00:42:49,005:INFO:Initializing tune_model()
+2023-11-16 00:42:49,005:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=10, custom_grid=None, optimize=f1_weighted, custom_scorer=None, search_library=scikit-optimize, search_algorithm=bayesian, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:42:49,005:INFO:Checking exceptions
+2023-11-16 00:42:49,005:INFO:Soft dependency imported: skopt: 0.9.0
+2023-11-16 00:43:04,435:INFO:Initializing tune_model()
+2023-11-16 00:43:04,435:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2023-11-16 00:43:04,435:INFO:Checking exceptions
+2023-11-16 00:43:04,500:INFO:Copying training dataset
+2023-11-16 00:43:04,594:INFO:Checking base model
+2023-11-16 00:43:04,594:INFO:Base model : Extreme Gradient Boosting
+2023-11-16 00:43:04,597:INFO:Declaring metric variables
+2023-11-16 00:43:04,600:INFO:Defining Hyperparameters
+2023-11-16 00:43:04,741:INFO:Tuning with n_jobs=-1
+2023-11-16 00:43:04,742:INFO:Initializing RandomizedSearchCV
+2023-11-16 00:45:36,550:INFO:best_params: {'actual_estimator__subsample': 0.7, 'actual_estimator__scale_pos_weight': 37.1, 'actual_estimator__reg_lambda': 0.7, 'actual_estimator__reg_alpha': 2, 'actual_estimator__n_estimators': 290, 'actual_estimator__min_child_weight': 3, 'actual_estimator__max_depth': 7, 'actual_estimator__learning_rate': 0.15, 'actual_estimator__colsample_bytree': 0.9}
+2023-11-16 00:45:36,550:INFO:Hyperparameter search completed
+2023-11-16 00:45:36,550:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:45:36,550:INFO:Initializing create_model()
+2023-11-16 00:45:36,550:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000029D2D581250>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'subsample': 0.7, 'scale_pos_weight': 37.1, 'reg_lambda': 0.7, 'reg_alpha': 2, 'n_estimators': 290, 'min_child_weight': 3, 'max_depth': 7, 'learning_rate': 0.15, 'colsample_bytree': 0.9})
+2023-11-16 00:45:36,550:INFO:Checking exceptions
+2023-11-16 00:45:36,550:INFO:Importing libraries
+2023-11-16 00:45:36,550:INFO:Copying training dataset
+2023-11-16 00:45:36,664:INFO:Defining folds
+2023-11-16 00:45:36,664:INFO:Declaring metric variables
+2023-11-16 00:45:36,683:INFO:Importing untrained model
+2023-11-16 00:45:36,684:INFO:Declaring custom model
+2023-11-16 00:45:36,684:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:45:36,694:INFO:Starting cross validation
+2023-11-16 00:45:36,696:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:45:48,673:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:45:48,879:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:45:49,073:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:01,566:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:01,751:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:01,945:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:15,080:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:15,280:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:15,485:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:29,345:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:29,527:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:29,697:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:42,766:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:42,928:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:43,111:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:46:43,638:INFO:Calculating mean and std
+2023-11-16 00:46:43,638:INFO:Creating metrics dataframe
+2023-11-16 00:46:43,644:INFO:Finalizing model
+2023-11-16 00:46:58,328:INFO:Uploading results into container
+2023-11-16 00:46:58,332:INFO:Uploading model into container now
+2023-11-16 00:46:58,333:INFO:_master_model_container: 9
+2023-11-16 00:46:58,333:INFO:_display_container: 5
+2023-11-16 00:46:58,334:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.9, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.15, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=3, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=290, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:46:58,334:INFO:create_model() successfully completed......................................
+2023-11-16 00:46:58,496:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:46:58,496:INFO:choose_better activated
+2023-11-16 00:46:58,496:INFO:SubProcess create_model() called ==================================
+2023-11-16 00:46:58,496:INFO:Initializing create_model()
+2023-11-16 00:46:58,496:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2023-11-16 00:46:58,496:INFO:Checking exceptions
+2023-11-16 00:46:58,496:INFO:Importing libraries
+2023-11-16 00:46:58,496:INFO:Copying training dataset
+2023-11-16 00:46:58,611:INFO:Defining folds
+2023-11-16 00:46:58,611:INFO:Declaring metric variables
+2023-11-16 00:46:58,611:INFO:Importing untrained model
+2023-11-16 00:46:58,611:INFO:Declaring custom model
+2023-11-16 00:46:58,611:INFO:Extreme Gradient Boosting Imported successfully
+2023-11-16 00:46:58,611:INFO:Starting cross validation
+2023-11-16 00:46:58,626:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2023-11-16 00:47:03,143:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:03,376:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:03,576:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:08,220:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:08,401:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:08,613:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:12,297:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:12,502:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:12,708:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:16,095:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:16,275:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:16,452:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:21,099:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:21,274:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:21,454:WARNING:C:\Users\pawas\AppData\Roaming\Python\Python311\site-packages\sklearn\metrics\_classification.py:1396: UserWarning: Note that pos_label (set to 'none') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2023-11-16 00:47:21,796:INFO:Calculating mean and std
+2023-11-16 00:47:21,797:INFO:Creating metrics dataframe
+2023-11-16 00:47:21,797:INFO:Finalizing model
+2023-11-16 00:47:27,175:INFO:Uploading results into container
+2023-11-16 00:47:27,175:INFO:Uploading model into container now
+2023-11-16 00:47:27,175:INFO:_master_model_container: 10
+2023-11-16 00:47:27,175:INFO:_display_container: 6
+2023-11-16 00:47:27,175:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:47:27,175:INFO:create_model() successfully completed......................................
+2023-11-16 00:47:27,341:INFO:SubProcess create_model() end ==================================
+2023-11-16 00:47:27,341:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9966
+2023-11-16 00:47:27,341:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=0.9, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.15, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=3, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=290, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) result for Accuracy is 0.9962
+2023-11-16 00:47:27,341:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...) is best model
+2023-11-16 00:47:27,341:INFO:choose_better completed
+2023-11-16 00:47:27,341:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-16 00:47:27,358:INFO:_master_model_container: 10
+2023-11-16 00:47:27,358:INFO:_display_container: 5
+2023-11-16 00:47:27,358:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...)
+2023-11-16 00:47:27,358:INFO:tune_model() successfully completed......................................
+2023-11-16 00:47:52,440:INFO:Initializing plot_model()
+2023-11-16 00:47:52,440:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2023-11-16 00:47:52,440:INFO:Checking exceptions
+2023-11-16 00:47:52,491:INFO:Preloading libraries
+2023-11-16 00:47:52,507:INFO:Copying training dataset
+2023-11-16 00:47:52,507:INFO:Plot type: confusion_matrix
+2023-11-16 00:47:52,890:INFO:Fitting Model
+2023-11-16 00:47:52,905:INFO:Scoring test/hold-out set
+2023-11-16 00:47:53,257:INFO:Visual Rendered Successfully
+2023-11-16 00:47:53,390:INFO:plot_model() successfully completed......................................
+2023-11-16 00:47:57,907:INFO:Initializing plot_model()
+2023-11-16 00:47:57,907:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), plot=class_report, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2023-11-16 00:47:57,907:INFO:Checking exceptions
+2023-11-16 00:47:57,957:INFO:Preloading libraries
+2023-11-16 00:47:57,974:INFO:Copying training dataset
+2023-11-16 00:47:57,974:INFO:Plot type: class_report
+2023-11-16 00:47:58,356:INFO:Fitting Model
+2023-11-16 00:47:58,371:INFO:Scoring test/hold-out set
+2023-11-16 00:47:58,810:INFO:Visual Rendered Successfully
+2023-11-16 00:47:58,941:INFO:plot_model() successfully completed......................................
+2023-11-16 00:48:02,890:INFO:Initializing plot_model()
+2023-11-16 00:48:02,891:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000029D1431AC10>, estimator=XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=-1,
+              num_parallel_tree=None, objective='multi:softprob', ...), plot=feature, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2023-11-16 00:48:02,891:INFO:Checking exceptions
+2023-11-16 00:48:02,940:INFO:Preloading libraries
+2023-11-16 00:48:02,963:INFO:Copying training dataset
+2023-11-16 00:48:02,963:INFO:Plot type: feature
+2023-11-16 00:48:02,964:WARNING:No coef_ found. Trying feature_importances_
+2023-11-16 00:48:03,230:INFO:Visual Rendered Successfully
+2023-11-16 00:48:03,373:INFO:plot_model() successfully completed......................................
