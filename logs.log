@@ -1400,3 +1400,11 @@
 2023-11-16 00:48:02,964:WARNING:No coef_ found. Trying feature_importances_
 2023-11-16 00:48:03,230:INFO:Visual Rendered Successfully
 2023-11-16 00:48:03,373:INFO:plot_model() successfully completed......................................
+2023-11-16 00:57:57,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:57:57,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:57:57,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-16 00:57:57,287:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
